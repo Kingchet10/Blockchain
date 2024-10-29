@@ -357,41 +357,41 @@ BuyMyRoom 是一个基于区块链的房产交易平台，用户可以通过 NFT
 
 - 在npm run start执行后，在google浏览器访问 localhost:3000
 
-  ![6e25964a09770cef7ea9894d02c13ac](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\6e25964a09770cef7ea9894d02c13ac.png)
+  ![6e25964a09770cef7ea9894d02c13ac](.\graph\Temp\6e25964a09770cef7ea9894d02c13ac.png)
 
 - 在弹出的小狐狸窗口中输入密码，然后就可以选择用户登录啦
 
-  ![1730204222006](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730204222006.png)
+  ![1730204222006](.\graph\Temp\1730204222006.png)
 
 - 登录后直接进入我的房屋列表页面，显示该用户名下的所有房屋
 
-  ![1730204272038](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730204272038.png)
+  ![1730204272038](.\graph\Temp\1730204272038.png)
 
 - 我选择登录的该用户就是这个模型的部署者，因此它可以铸造房屋，我选择给他自己铸造房屋
 
-  ![1730204349316](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730204349316.png)
+  ![1730204349316](.\graph\Temp\1730204349316.png)
 
   
 
 - 然后就可以看到该用户的房屋列表多了一个房屋
 
-  ![1730204550907](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730204550907.png)
+  ![1730204550907](.\graph\Temp\1730204550907.png)
 
   
 
 - 这时我准备用ETH兑换积分，这里我准备使用两个ETH来兑换积分，注意本应用的比值是1ETH兑换1000积分
 
-  ![1730204648072](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730204648072.png)
+  ![1730204648072](.\graph\Temp\1730204648072.png)
 
   兑换前的账户ETH余额:
 
-  ![1730205343861](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730205343861.png)
+  ![1730205343861](.\graph\Temp\1730205343861.png)
 
   兑换后：
 
-  ![1730205396102](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730205396102.png)
+  ![1730205396102](.\graph\Temp\1730205396102.png)
 
-  ![1730205421722](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730205421722.png)
+  ![1730205421722](.\graph\Temp\1730205421722.png)
 
   
 
@@ -399,46 +399,46 @@ BuyMyRoom 是一个基于区块链的房产交易平台，用户可以通过 NFT
 
   兑换前：
 
-  ![1730206273088](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206273088.png)
+  ![1730206273088](.\graph\Temp\1730206273088.png)
 
-  ![1730206297125](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206297125.png)
+  ![1730206297125](.\graph\Temp\1730206297125.png)
 
   兑换后：
 
-  ![1730206317856](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206317856.png)
+  ![1730206317856](.\graph\Temp\1730206317856.png)
 
-  ![1730206328994](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206328994.png)
+  ![1730206328994](.\graph\Temp\1730206328994.png)
 
   
 
 - 现在我要上架刚刚铸造的ID为9的房屋
 
-  ![1730206559205](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206559205.png)
+  ![1730206559205](.\graph\Temp\1730206559205.png)
 
 ​          900 是积分价格
 
-![1730206592551](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206592551.png)
+![1730206592551](.\graph\Temp\1730206592551.png)
 
 
 
 - 这是下架房屋，我下架这个ID为9的房屋：
 
-  ![1730206623274](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206623274.png)
+  ![1730206623274](.\graph\Temp\1730206623274.png)
 
-  ![1730206688308](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730206688308.png)
+  ![1730206688308](.\graph\Temp\1730206688308.png)
 
 - 在准备出售的房屋这里，可以看到已经上架的所有房屋：
 
-  ![1730207070591](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730207070591.png)
+  ![1730207070591](.\graph\Temp\1730207070591.png)
 
 然后我换一个账号登录，来购买一个房屋
 
-![1730207235033](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730207235033.png)
+![1730207235033](.\graph\Temp\1730207235033.png)
 
-![1730207273652](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730207273652.png)
+![1730207273652](.\graph\Temp\1730207273652.png)
 
-![1730207289985](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730207289985.png)
+![1730207289985](.\graph\Temp\1730207289985.png)
 
-![1730207301988](D:\新建文件夹\WeChat Files\wxid_cu5jzmept13i22\FileStorage\Temp\1730207301988.png)
+![1730207301988](.\graph\Temp\1730207301988.png)
 
 可以看到这里的我的房屋列表里，ID为9的房屋变成了它的，并且默认没有上架。可以看到购买其花了该用户900积分，其积分余额从9997变成了9097
