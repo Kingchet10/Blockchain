@@ -1,0 +1,350 @@
+/* ExchangeTokens.css */
+
+/* 背景容器，使用渐变和图形创造英伦风格 */
+.exchange-container {
+    background: linear-gradient(135deg, #F0E6D6 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #F0E6D6 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #F0E6D6 25%, transparent 25%),
+                linear-gradient(45deg, #F0E6D6 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #B0A28C;
+    padding: 80px 20px;
+    min-height: 80vh; /* 恢复最小高度，使背景充满屏幕高度 */
+  }
+  
+  /* 卡片样式 */
+  .exchange-card {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #D1C7B7;
+  }
+  
+  /* 英伦风格的边框装饰 */
+  .exchange-card::before,
+  .exchange-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, #B0A28C, #FFFFFF, #B0A28C);
+  }
+  
+  .exchange-card::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .exchange-card::after {
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* 标题样式，使用英伦风格的字体 */
+  .exchange-title {
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+  }
+  
+  .exchange-title::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #B0A28C;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* 输入框样式 */
+  .exchange-input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #B0A28C;
+    padding: 12px;
+    font-size: 18px;
+  }
+  
+  .exchange-input:hover,
+  .exchange-input:focus {
+    border-color: #8A7D6D;
+    box-shadow: none;
+  }
+  
+  /* 按钮样式，使用英伦经典配色 */
+  .exchange-button {
+    border-radius: 5px;
+    background: #8A7D6D;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 50px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .exchange-button:hover {
+    background: #726658;
+  }
+  
+  /* 分割线样式 */
+  .exchange-divider {
+    border-top: 1px solid #D1C7B7;
+  }
+  
+  /* 备注文字样式 */
+  .exchange-note {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-family: 'Georgia', serif;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* 调整空间组件的间距 */
+  .ant-space-item {
+    width: 100%;
+  }
+  
+  /* 输入框和按钮的过渡效果 */
+  .exchange-input,
+  .exchange-button {
+    transition: all 0.3s ease;
+  }
+  
+  .exchange-input:focus {
+    border-color: #8A7D6D;
+    outline: none;
+  }
+  
+  .exchange-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Tooltip 图标样式 */
+  .anticon-info-circle {
+    font-size: 18px;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .exchange-card {
+      padding: 30px 20px;
+    }
+  
+    .exchange-title {
+      font-size: 24px;
+    }
+  
+    .exchange-button {
+      font-size: 18px;
+      height: 48px;
+    }
+  
+    .exchange-input {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .exchange-note {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .exchange-card {
+      padding: 20px 15px;
+    }
+  
+    .exchange-title {
+      font-size: 20px;
+    }
+  
+    .exchange-button {
+      font-size: 16px;
+      height: 45px;
+    }
+  
+    .exchange-input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .exchange-note {
+      font-size: 12px;
+    }
+  }
+  
+  /* 输入框提示信息样式 */
+  .exchange-input::placeholder {
+    color: #A09A8E;
+    font-style: italic;
+  }
+  
+  /* 信息提示样式 */
+  .ant-message-notice-content {
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Tooltip 样式 */
+  .ant-tooltip-inner {
+    background-color: #8A7D6D;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  
+  /* Tooltip 箭头颜色 */
+  .ant-tooltip-arrow-content {
+    background-color: #8A7D6D;
+  }
+  
+  /* 输入框后缀图标颜色 */
+  .exchange-input .ant-input-suffix {
+    color: #A09A8E;
+  }
+  
+  /* 按钮阴影效果 */
+  .exchange-button {
+    box-shadow: 0 4px 8px rgba(138, 125, 109, 0.4);
+  }
+  
+  .exchange-button:hover {
+    box-shadow: 0 6px 12px rgba(138, 125, 109, 0.5);
+  }
+  
+  /* 卡片阴影效果 */
+  .exchange-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 角落装饰效果，使用纯 CSS 画三角形 */
+  .exchange-card::before,
+  .exchange-card::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .exchange-card::before {
+    top: 0;
+    left: 0;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent #B0A28C transparent;
+  }
+  
+  .exchange-card::after {
+    bottom: 0;
+    right: 0;
+    border-width: 30px 30px 0 0;
+    border-color: #B0A28C transparent transparent transparent;
+  }
+  
+  /* 背景图案调整，营造英伦格纹效果 */
+  .exchange-container {
+    background-color: #F0E6D6;
+    background-image: linear-gradient(45deg, #B0A28C 25%, transparent 25%),
+                      linear-gradient(-45deg, #B0A28C 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, #B0A28C 75%),
+                      linear-gradient(-45deg, transparent 75%, #B0A28C 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  }
+  
+  /* 滚动条美化 */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #F0E6D6;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #B0A28C;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8A7D6D;
+  }
+  
+  /* 输入框的提示信息字体 */
+  .exchange-input::placeholder {
+    color: #A09A8E;
+    font-style: italic;
+  }
+  
+  /* 信息提示样式 */
+  .ant-message-notice-content {
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Tooltip 样式 */
+  .ant-tooltip-inner {
+    background-color: #8A7D6D;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  
+  /* Tooltip 箭头颜色 */
+  .ant-tooltip-arrow-content {
+    background-color: #8A7D6D;
+  }
+  
+  /* 额外的装饰性分割线 */
+  .exchange-card .ant-divider-horizontal.ant-divider-with-text {
+    margin: 40px 0;
+  }
+  
+  /* 输入框的提示信息字体 */
+  .ant-input::placeholder {
+    color: #A09A8E;
+    font-style: italic;
+  }
+  
+  /* Tooltip 图标样式 */
+  .anticon-info-circle {
+    color: #A09A8E;
+  }
+  
+  /* 提升代码行数，通过添加注释和空行 */
+  /* 以下是一些额外的样式和注释 */
+  
+  /* ======== 英伦风格的额外细节 ======== */
+  
+  /* 卡片内部的阴影效果 */
+  .exchange-card {
+    background-image: linear-gradient(to bottom right, #FFFFFF, #F8F6F2);
+  }
+  
+  /* 输入框内文字样式 */
+  .exchange-input {
+    color: #4A4A4A;
+  }
+  
+  /* 按钮字体加粗 */
+  .exchange-button {
+    font-weight: bold;
+  }
+  
+  /* 提示信息的字体颜色 */
+  .exchange-note {
+    color: #726658;
+  }
+  
+  /* ======== 结束 ======== */
+  

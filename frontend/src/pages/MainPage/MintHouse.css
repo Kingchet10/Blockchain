@@ -1,0 +1,258 @@
+/* MintHouse.css */
+
+/* ====== 全局样式重置 ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ====== 背景容器 ====== */
+  .mint-container {
+    position: relative;
+    min-height: 80vh; /* 恢复最小高度，使背景充满屏幕高度 */
+    background: linear-gradient(135deg, #ffffff 25%, #f0f0f0 25%, #f0f0f0 50%, #ffffff 50%, #ffffff 75%, #f0f0f0 75%, #f0f0f0 100%);
+    background-size: 40px 40px; /* 创建英伦风格的棋盘格纹理 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+  
+  /* 背景叠加层，添加浅蓝色半透明覆盖，恢复之前的蓝色效果 */
+  .mint-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(74, 144, 226, 0.1); /* 浅蓝色半透明叠加 */
+    z-index: 1;
+  }
+  
+  /* ====== 卡片样式 ====== */
+  .mint-card {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* 卡片顶部装饰 */
+  .mint-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 50px 50px 0 50px;
+    border-style: solid;
+    border-color: #4A90E2 transparent transparent transparent;
+    z-index: -1;
+  }
+  
+  /* ====== 标题样式 ====== */
+  .mint-title {
+    font-family: 'Playfair Display', serif; /* 使用具有英伦风格的字体 */
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* 标题下方的装饰线 */
+  .mint-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    background-color: #4A90E2;
+    transform: translateX(-50%);
+  }
+  
+  /* ====== 分割线样式 ====== */
+  .mint-divider {
+    border-top: 1px solid #e6e6e6;
+    margin: 20px 0 30px 0;
+  }
+  
+  /* ====== 输入框样式 ====== */
+  .mint-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .mint-input:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.2);
+  }
+  
+  /* 输入框前缀图标颜色 */
+  .mint-input .ant-input-prefix {
+    color: #8B8B8B;
+    margin-right: 10px;
+  }
+  
+  /* ====== 按钮样式 ====== */
+  .mint-button {
+    border-radius: 25px;
+    background: linear-gradient(90deg, #4A90E2 0%, #007AFF 100%);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .mint-button:hover {
+    background: linear-gradient(90deg, #357ABD 0%, #005BBB 100%);
+    box-shadow: 0 8px 15px rgba(74, 144, 226, 0.2);
+  }
+  
+  .mint-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* ====== 提示文字样式 ====== */
+  .mint-note {
+    display: block;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* ====== 响应式设计 ====== */
+  @media (max-width: 768px) {
+    .mint-card {
+      padding: 30px 40px;
+    }
+  
+    .mint-title {
+      font-size: 30px;
+    }
+  
+    .mint-button {
+      font-size: 16px;
+      height: 48px;
+    }
+  
+    .mint-input {
+      font-size: 14px;
+      height: 48px;
+    }
+  
+    .mint-note {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mint-card {
+      padding: 20px 20px;
+    }
+  
+    .mint-title {
+      font-size: 24px;
+    }
+  
+    .mint-button {
+      font-size: 14px;
+      height: 45px;
+    }
+  
+    .mint-input {
+      font-size: 12px;
+      height: 45px;
+    }
+  
+    .mint-note {
+      font-size: 10px;
+    }
+  }
+  
+  /* ====== 滚动条美化 ====== */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  
+  /* ====== 工具提示样式 ====== */
+  .ant-tooltip-inner {
+    background-color: #4A90E2;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .ant-tooltip-arrow-content {
+    background-color: #4A90E2;
+  }
+  
+  /* ====== 信息提示 ====== */
+  .ant-message-notice-content {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* ====== 其他细节样式 ====== */
+  /* 输入框占位符 */
+  .mint-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* 按钮阴影 */
+  .mint-button {
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.4);
+  }
+  
+  /* 输入框内图标颜色 */
+  .mint-input .ant-input-prefix {
+    color: #8B8B8B;
+  }
+  
+  /* 按钮文字阴影 */
+  .mint-button {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 卡片内部阴影 */
+  .mint-card {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* ====== 字体引入 ====== */
+  /* 在 index.html 或主样式文件中引入字体 */
+  /*
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+  */
+  

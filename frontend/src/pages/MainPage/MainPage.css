@@ -1,0 +1,79 @@
+/* 全局字体和背景 */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  /* 左侧菜单栏样式 */
+  .logo {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .ant-layout-sider {
+    background: linear-gradient(180deg, #3b5998, #192f6a);
+  }
+  
+  .ant-menu-dark.ant-menu-inline .ant-menu-item {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* 顶部头部样式 */
+  .header-background {
+    background: linear-gradient(90deg, #1a2a6c 0%, #b21f1f 100%); /* 使用较深的渐变色 */
+    color: #fff;
+    padding: 20px; /* 增加上下内边距，防止内容重叠 */
+  }
+  
+  .header-card {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+  }
+  
+  .header-text {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  /* 确保文本在背景上可读 */
+  .header-card .ant-typography {
+    color: #fff;
+  }
+  
+  /* 内容区域样式 */
+  .site-layout-content {
+    margin: 20px; /* 调整外边距 */
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* 调整菜单项的样式 */
+  .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* 使菜单项在悬停时有过渡效果 */
+  .ant-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transition: background-color 0.3s;
+  }
+  
+  /* 修复内容重叠问题 */
+  .site-layout {
+    margin-left: 200px; /* 确保内容区域不被侧边栏遮挡 */
+  }
+  
+  @media (max-width: 768px) {
+    .site-layout {
+      margin-left: 0;
+    }
+  }
+  
